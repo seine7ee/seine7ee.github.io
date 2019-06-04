@@ -142,6 +142,55 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="/2019/06/04/leetcode-0019-删除链表的倒数第N个个节点/">
+        leetcode-0019-删除链表的倒数第N个个节点
+      </a>
+    </h2>
+    
+    <time>
+      Jun 4, 2019
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <p>#[题目表述]</p>
+<p>##给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。</p>
+<p>示例：</p>
+<p>给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.</p>
+<p>当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.<br>说明：</p>
+<p>给定的 n 保证是有效的。</p>
+<p>进阶：</p>
+<p>你能尝试使用一趟扫描实现吗？</p>
+<p>‘’’<br>    def removeNthFromEnd_one_iter(self, head, n):<br>        dummy = ListNode(0)</p>
+<pre><code>dummy.next = head
+
+first = dummy
+second = dummy
+
+while n &gt;= 0:
+    first = first.next
+    n -= 1
+
+while first:
+    second = second.next
+    first = first.next
+second.next = second.next.next
+
+return dummy.next</code></pre><p>‘’’</p>
+
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="/2019/06/04/another-one/">
         another one
       </a>
