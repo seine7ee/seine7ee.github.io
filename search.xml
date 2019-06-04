@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>another one</title>
+      <link href="/2019/06/04/another-one/"/>
+      <url>/2019/06/04/another-one/</url>
+      
+        <content type="html"><![CDATA[<p>试着写一写leetcode刷题感想</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hello, my first blog with hexo</title>
       <link href="/2019/06/03/hello-my-first-blog-with-hexo/"/>
       <url>/2019/06/03/hello-my-first-blog-with-hexo/</url>
