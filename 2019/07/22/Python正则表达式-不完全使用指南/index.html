@@ -81,13 +81,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="everything`s cola">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1. 基础字符1.1 元字符元字符是一些特殊的metacharactes， 并且不匹配自己。相反，他们表示应该匹配一些与众不同的东西，或者通过重复他们或改变他们的含义来影响正则的其他部分。元字符如下：  .  ^  $  *  +  ?  {  }  [  ]  \  |  (  )   在元字符”[ ]”中，可以单独列出字符，也可以通过给出两个字符并用”-“标记将它们分开来表示一系列字符。例如，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python正则表达式-不完全使用指南">
+<meta property="og:url" content="http://yoursite.com/2019/07/22/Python正则表达式-不完全使用指南/index.html">
 <meta property="og:site_name" content="everything`s cola">
+<meta property="og:description" content="1. 基础字符1.1 元字符元字符是一些特殊的metacharactes， 并且不匹配自己。相反，他们表示应该匹配一些与众不同的东西，或者通过重复他们或改变他们的含义来影响正则的其他部分。元字符如下：  .  ^  $  *  +  ?  {  }  [  ]  \  |  (  )   在元字符”[ ]”中，可以单独列出字符，也可以通过给出两个字符并用”-“标记将它们分开来表示一系列字符。例如，">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-22T12:40:58.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="everything`s cola">
+<meta name="twitter:title" content="Python正则表达式-不完全使用指南">
+<meta name="twitter:description" content="1. 基础字符1.1 元字符元字符是一些特殊的metacharactes， 并且不匹配自己。相反，他们表示应该匹配一些与众不同的东西，或者通过重复他们或改变他们的含义来影响正则的其他部分。元字符如下：  .  ^  $  *  +  ?  {  }  [  ]  \  |  (  )   在元字符”[ ]”中，可以单独列出字符，也可以通过给出两个字符并用”-“标记将它们分开来表示一系列字符。例如，">
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/22/Python正则表达式-不完全使用指南/">
 
 
 
 
 
-  <title>everything`s cola</title>
+  <title>Python正则表达式-不完全使用指南 | everything`s cola</title>
   
 
 
@@ -142,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,9 +229,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -258,9 +261,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/22/Python正则表达式-不完全使用指南/" itemprop="url">Python正则表达式-不完全使用指南</a></h1>
+          <h1 class="post-title" itemprop="name headline">Python正则表达式-不完全使用指南</h1>
         
 
         <div class="post-meta">
@@ -332,9 +333,7 @@
       
 
       
-        
-          
-            <h1 id="1-基础字符"><a href="#1-基础字符" class="headerlink" title="1. 基础字符"></a>1. 基础字符</h1><h2 id="1-1-元字符"><a href="#1-1-元字符" class="headerlink" title="1.1 元字符"></a>1.1 元字符</h2><p>元字符是一些特殊的metacharactes， 并且不匹配自己。相反，他们表示应该匹配一些与众不同的东西，或者通过重复他们或改变他们的含义来影响正则的其他部分。元字符如下：</p>
+        <h1 id="1-基础字符"><a href="#1-基础字符" class="headerlink" title="1. 基础字符"></a>1. 基础字符</h1><h2 id="1-1-元字符"><a href="#1-1-元字符" class="headerlink" title="1.1 元字符"></a>1.1 元字符</h2><p>元字符是一些特殊的metacharactes， 并且不匹配自己。相反，他们表示应该匹配一些与众不同的东西，或者通过重复他们或改变他们的含义来影响正则的其他部分。元字符如下：</p>
 <blockquote>
 <p>.  ^  $  *  +  ?  {  }  [  ]  \  |  (  )</p>
 </blockquote>
@@ -655,8 +654,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实现将句中的正数转换为浮点数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">transfer</span><span class="params">(match)</span>:</span></span><br><span class="line">    value = int(match.group())</span><br><span class="line">    after_transfer = float(value)</span><br><span class="line">    <span class="comment"># 字符类型转换</span></span><br><span class="line">    <span class="keyword">return</span> str(after_transfer)</span><br><span class="line"></span><br><span class="line">raw = <span class="string">"James scored 33 points and Davis scored 29 points"</span></span><br><span class="line">p = re.compile(<span class="string">r"\d+"</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">需要注意的时，sub(replacement, string)，replacement一般都是一个字符型对象。</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">p.sub(transfer, raw)</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -673,177 +670,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/04/leetcode-0019-删除链表的倒数第N个个节点/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="seine7ee">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="everything`s cola">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/04/leetcode-0019-删除链表的倒数第N个个节点/" itemprop="url">leetcode-0019-删除链表的倒数第N个个节点</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-04T14:32:20+08:00">
-                2019-06-04
-              </time>
+              <a href="/2019/06/04/leetcode-0019-删除链表的倒数第N个个节点/" rel="next" title="leetcode-0019-删除链表的倒数第N个个节点">
+                <i class="fa fa-chevron-left"></i> leetcode-0019-删除链表的倒数第N个个节点
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode刷题/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode刷题</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="题目表述"><a href="#题目表述" class="headerlink" title="[题目表述]"></a>[题目表述]</h2><p>给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。</p>
-<p>示例：</p>
-<p>给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.</p>
-<p>当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.<br>说明：</p>
-<p>给定的 n 保证是有效的。</p>
-<p>进阶：</p>
-<p>你能尝试使用一趟扫描实现吗？</p>
-<pre><code>def removeNthFromEnd_one_iter(self, head, n):
-    dummy = ListNode(0)
-
-dummy.next = head
-
-first = dummy
-second = dummy
-
-while n &gt;= 0:
-    first = first.next
-    n -= 1
-
-while first:
-    second = second.next
-    first = first.next
-second.next = second.next.next
-
-return dummy.next</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -853,10 +701,11 @@ return dummy.next</code></pre>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -864,6 +713,10 @@ return dummy.next</code></pre>
 
 
           
+
+  
+
+
 
         </div>
         
@@ -884,8 +737,17 @@ return dummy.next</code></pre>
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -943,6 +805,22 @@ return dummy.next</code></pre>
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-基础字符"><span class="nav-number">1.</span> <span class="nav-text">1. 基础字符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-元字符"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 元字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-预定义字符集"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 预定义字符集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-常用操作符"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 常用操作符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-使用正则表达式"><span class="nav-number">2.</span> <span class="nav-text">2. 使用正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-编译正则表达式"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 编译正则表达式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-应用匹配"><span class="nav-number">3.</span> <span class="nav-text">3. 应用匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-re库的常用函数"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 re库的常用函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-匹配对象"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 匹配对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-更多模式能力"><span class="nav-number">4.</span> <span class="nav-text">4. 更多模式能力</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-分组"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-忽略某个分组"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 忽略某个分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-命名分组"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 命名分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-前向断言"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 前向断言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正前向断言-–-…"><span class="nav-number">4.4.0.1.</span> <span class="nav-text">正前向断言  –  (?=…)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#负前向断言-–-…"><span class="nav-number">4.4.0.2.</span> <span class="nav-text">负前向断言  –  (?!…)</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#5-修改字符串"><span class="nav-number">5.</span> <span class="nav-text">5. 修改字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-分割字符串"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 分割字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-搜索和替换"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 搜索和替换</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1083,6 +961,10 @@ return dummy.next</code></pre>
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
