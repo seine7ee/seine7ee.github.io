@@ -339,7 +339,7 @@
 <script type="math/tex; mode=display">
 S(V_i) = (1-d) + d * \sum_{j\in In(V_i)} { {1}\over{|Out(V_j)|} }S(V_j)</script><blockquote>
 <p>$S(V_i)$ - the weight of webpage i</p>
-<p>d - damping factor, in case of no outgoing links</p>
+<p>$d$ - damping factor, in case of no outgoing links</p>
 <p>$In(V_i)$ - inbound links of i, which is a set</p>
 <p>$Out(V_j)$ - outgoing links of j, which is a set</p>
 <p>$|Out(V_j)|$ - the number of outbound links</p>
@@ -391,7 +391,7 @@ S(V_i) = (1-d) + d * \sum_{j\in In(V_i)} { {1}\over{|Out(V_j)|} }S(V_j)</script>
 </tbody>
 </table>
 </div>
-<p>根据公式${1 \over {Out(V_j)}}$，我们应对上述的矩阵作标准化处理</p>
+<p>根据公式${1 \over {Out(V_j)}}$，我们应对上述的矩阵作标准化处理，<font color="red">这一步对矩阵所做的处理，实际上也就是将矩阵转换成马尔可夫的转移概率矩阵，通过Markov Chains(实际上网页之间的连接就是一个Markov Chains)的性质来得出最终收敛结果(即该Markov Chains的平稳分布)，也就是我们需要的PageRank。</font></p>
 <div class="table-container">
 <table>
 <thead>
