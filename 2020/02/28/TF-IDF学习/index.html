@@ -83,14 +83,14 @@
 
 <meta name="description" content="TF-IDF学习1. 介绍TF-IDF(term frequency - inverse document frequence)是一种用于信息检索和数据挖掘的常用加权技术。使用TF-IDF是因为计算机只能识别数字，对于文本总出现的单词，计算机无法对它们进行数据处理，需要将文本转换成数学上的概念，便于进一步的训练。 思想： 字词的重要性与该字词在文件中出现的次数成正比，而与该字词在语料库中出现的次数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="everything`s cola">
-<meta property="og:url" content="http://yoursite.com/2020/02/28/Tf-Idf/index.html">
+<meta property="og:title" content="TF-IDF学习">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/TF-IDF学习/index.html">
 <meta property="og:site_name" content="everything`s cola">
 <meta property="og:description" content="TF-IDF学习1. 介绍TF-IDF(term frequency - inverse document frequence)是一种用于信息检索和数据挖掘的常用加权技术。使用TF-IDF是因为计算机只能识别数字，对于文本总出现的单词，计算机无法对它们进行数据处理，需要将文本转换成数学上的概念，便于进一步的训练。 思想： 字词的重要性与该字词在文件中出现的次数成正比，而与该字词在语料库中出现的次数">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-02-28T08:45:32.214Z">
+<meta property="og:updated_time" content="2020-02-28T09:00:56.135Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="everything`s cola">
+<meta name="twitter:title" content="TF-IDF学习">
 <meta name="twitter:description" content="TF-IDF学习1. 介绍TF-IDF(term frequency - inverse document frequence)是一种用于信息检索和数据挖掘的常用加权技术。使用TF-IDF是因为计算机只能识别数字，对于文本总出现的单词，计算机无法对它们进行数据处理，需要将文本转换成数学上的概念，便于进一步的训练。 思想： 字词的重要性与该字词在文件中出现的次数成正比，而与该字词在语料库中出现的次数">
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/28/Tf-Idf/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/28/TF-IDF学习/">
 
 
 
 
 
-  <title> | everything`s cola</title>
+  <title>TF-IDF学习 | everything`s cola</title>
   
 
 
@@ -244,7 +244,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/Tf-Idf/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/TF-IDF学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="seine7ee">
@@ -261,7 +261,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">TF-IDF学习</h1>
         
 
         <div class="post-meta">
@@ -273,7 +273,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-28T16:51:34+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-28T17:00:11+08:00">
                 2020-02-28
               </time>
             
@@ -283,6 +283,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/NLP/" itemprop="url" rel="index">
+                    <span itemprop="name">NLP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -373,7 +395,7 @@ IDF_i = log({文档总数 \over {包含单词i的文档数 + 1}})</script><h6 id
 <ol>
 <li><p>计算TF-IDF值</p>
 <p>这样就为每个文本（每句话）得到了一个向量，以第一句话为例，向量如下：</p>
-<p>| TF-IDF | 0.5774 | 0.   | 0.   | 0.5774 | 0.5774 | 0.   |<br>| ——— | ——— | —— | —— | ——— | ——— | —— |<br>| 单词   | 人往   | 悄悄 | 成为 | 玫瑰色 | 花香   | 过往 |</p>
+<p>| TF-IDF | 0.58 | 0.   | 0.   | 0.58   | 0.58 | 0.   |<br>| ——— | —— | —— | —— | ——— | —— | —— |<br>| 单词   | 人往 | 悄悄 | 成为 | 玫瑰色 | 花香 | 过往 |</p>
 </li>
 </ol>
 </blockquote>
@@ -411,8 +433,8 @@ IDF_i = log({文档总数 \over {包含单词i的文档数 + 1}})</script><h6 id
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/01/Keyword-Extraction-by-TextRank/" rel="next" title="Keyword Extraction by TextRank">
-                <i class="fa fa-chevron-left"></i> Keyword Extraction by TextRank
+              <a href="/2020/02/28/Tf-Idf/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -420,10 +442,6 @@ IDF_i = log({文档总数 \over {包含单词i的文档数 + 1}})</script><h6 id
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/28/TF-IDF学习/" rel="prev" title="TF-IDF学习">
-                TF-IDF学习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -760,6 +778,26 @@ IDF_i = log({文档总数 \over {包含单词i的文档数 + 1}})</script><h6 id
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
